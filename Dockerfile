@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install -y \
     mosquitto-clients curl && \
     rm -rf /var/lib/apt/lists/*
 
-ENV REDIS_AUTH_PLUGIN_VERSION 0.1.0
+ENV REDIS_AUTH_PLUGIN_VERSION 0.1.1
 ENV DOCKER_VERNEMQ_PLUGINS__REDIS_AUTH_PLUGIN on
 ENV DOCKER_VERNEMQ_PLUGINS__REDIS_AUTH_PLUGIN__PATH /etc/vernemq_redis_auth_plugin
 ENV DOCKER_VERNEMQ_PLUGINS__VMQ_PASSWD off
